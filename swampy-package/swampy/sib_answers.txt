@@ -1,7 +1,9 @@
 # Text answers from Week 0
 
-# Name:
+# Name: Steve Blank
 
+1) Why would refactoring be useful?
+	Refactoring improves the design of software and makes it easier to understand.  By refactoring, a user can cut out a lot of the "noise" and makes the code more readable.  It also helps the user program faster and makes it easier to find bugs.
 
 
 Explain what each of the following lines does. Use the terminology you learned from the book (or Google)
@@ -13,7 +15,10 @@ Explain what each of the following lines does. Use the terminology you learned f
 
 Answer:
 
-
+	'from TurtleWorld import *' imports everything from the TurtleWorld module in the swampy package.
+	'world = TurtleWorld()' assigns world to the TurtleWorld function.
+	'bob = Turtle()' assigns bob to the Turtle function.
+	'wait_for_user()' tells TurtleWorld to wait for the user to do something.
 
 
 
@@ -21,13 +26,13 @@ Answer:
 These questions pertain to the program you wrote in Week0.
 
 -- What are the arguments of polygon()?  What type is each argument?
-Answer:
+Answer: Polyline and angle
 
 -- What two turtle functions did you use to draw the sides of the polygon?
-Answer:
+Answer: fd(t, length) and polyline(t,n,l,a)
 
 -- What are the arguments for polyline?  What type is each argument?
-Answer:
+Answer: (Turtle, Number, Range, Degrees)
 
 
 
@@ -37,9 +42,16 @@ Suppose you wrote a function, center_circle(), that draws a circle of a given ra
 
 -- What turtle functions would you use to move the turtle from the center to the edge of the circle and get ready to call the original circle() function?
 Answer:
+pu(bob)
+bk(bob, r)
+pd(bob)
 
 -- Suppose the interface of this function requires the turtle to end up in the same place it started, facing in the same direction it started.
 Answer:
+pu(bob)
+bk(bob,r)
+rt(bob)
+pd(bob)
 
 -- What is this type of requirement called?
-Answer:
+Answer: Precondition/postcondition
